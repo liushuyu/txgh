@@ -16,6 +16,11 @@ module Txgh
       end
 
       def execute
+        # handle ping
+        if payload['zen']
+          logger.info("ignoring ping event")
+          return
+        end
         # Check if the branch in the hook data is the configured branch we want
         logger.info("request github branch: #{branch}")
         logger.info("config github branch: #{github_config_branch}")
