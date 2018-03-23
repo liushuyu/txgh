@@ -1,0 +1,22 @@
+txgh:
+  github:
+    repos:
+      lmms:
+        api_username: "liushuyu"
+        api_token: "abcdefghijklmnopq01234567890"
+        push_source_to: "lmms"
+        branch: "master"
+        webhook_secret: ""
+        sources:
+                work_tree: "../"
+                include: "include"
+                sources: "src plugins"
+        
+  transifex:
+    projects:
+      lmms/lmms:
+        tx_config: ".tx/config"
+        api_username: "lmmsservice"
+        api_password: "*********"
+        push_translations_to: "lmms/lmms"
+        webhook_secret: ""
